@@ -26,3 +26,11 @@ testResizingArrayStack: ${DIST_ALGS_PATH}/ResizingArrayStack.class
 .PHONY: testStack
 testStack: ${DIST_ALGS_PATH}/Stack.class
 	java -cp ${CLASSPATH} ${PACKAGE}.Stack < ${DATA_DIR}/tobe.txt
+
+.PHONY: testQueue
+testQueue: ${DIST_ALGS_PATH}/Queue.class
+	java -cp ${CLASSPATH} ${PACKAGE}.Queue < ${DATA_DIR}/tobe.txt
+
+.PHONY: testBag
+testBag: ${DIST_ALGS_PATH}/Bag.class
+	java -cp ${CLASSPATH} ${PACKAGE}.Bag < ${DATA_DIR}/tobe.txt
