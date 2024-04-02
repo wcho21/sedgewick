@@ -34,3 +34,11 @@ testQueue: ${DIST_ALGS_PATH}/Queue.class
 .PHONY: testBag
 testBag: ${DIST_ALGS_PATH}/Bag.class
 	java -cp ${CLASSPATH} ${PACKAGE}.Bag < ${DATA_DIR}/tobe.txt
+
+.PHONY: testQuickFindUF
+testQuickFindUF: ${DIST_ALGS_PATH}/QuickFindUF.class
+	java -cp ${CLASSPATH} ${PACKAGE}.QuickFindUF < ${DATA_DIR}/largeUF.txt
+
+.PHONY: testQuickUnionUF
+testQuickUnionUF: ${DIST_ALGS_PATH}/QuickUnionUF.class
+	java -cp ${CLASSPATH} ${PACKAGE}.QuickUnionUF < ${DATA_DIR}/largeUF.txt
